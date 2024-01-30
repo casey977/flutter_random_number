@@ -14,11 +14,12 @@ class MainApp extends StatefulWidget {
 
 class MainAppState extends State<MainApp> {
   late int randInt;
+  var rand = Random();
 
   @override
   void initState() {
     super.initState();
-    randInt = Random().nextInt(6) + 1;
+    randInt = 0;
   }
 
   @override
@@ -27,7 +28,7 @@ class MainAppState extends State<MainApp> {
         home: GestureDetector(
       onTap: () {
         setState(() {
-          randInt = Random().nextInt(6) + 1;
+          randInt = rand.nextInt(6) + 1;
         });
       },
       child: Scaffold(
