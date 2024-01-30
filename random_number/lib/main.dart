@@ -10,13 +10,13 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var rand_int = Random().nextInt(10);
+    var randInt = Random().nextInt(10).toString();
 
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
         body: Center(
           child: Text(
-            '0',
+            randInt,
             style: TextStyle(fontSize: 100),
           ),
         ),
