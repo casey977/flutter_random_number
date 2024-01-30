@@ -10,6 +10,8 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var rand_int = Random().nextInt(10);
+
     return const MaterialApp(
       home: Scaffold(
         body: Center(
