@@ -25,20 +25,21 @@ class MainAppState extends State<MainApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        theme: ThemeData(
+            scaffoldBackgroundColor: const Color.fromARGB(255, 0, 0, 0)),
         home: GestureDetector(
-      onTap: () {
-        setState(() {
-          randInt = rand.nextInt(6) + 1;
-        });
-      },
-      child: Scaffold(
-        body: Center(
-          child: Text(
-            randInt.toString(),
-            style: const TextStyle(fontSize: 100),
-          ),
-        ),
-      ),
-    ));
+            onTap: () {
+              setState(() {
+                randInt = rand.nextInt(6) + 1;
+              });
+            },
+            child: Scaffold(
+              body: Center(
+                child: Text(
+                  randInt.toString(),
+                  style: const TextStyle(fontSize: 100, color: Colors.white),
+                ),
+              ),
+            )));
   }
 }
