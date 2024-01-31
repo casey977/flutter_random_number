@@ -13,13 +13,12 @@ class MainApp extends StatefulWidget {
 }
 
 class MainAppState extends State<MainApp> {
-  late int randInt;
+  var randInt = 0;
   var rand = Random();
 
   @override
   void initState() {
     super.initState();
-    randInt = 0;
   }
 
   @override
