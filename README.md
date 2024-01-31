@@ -1,1 +1,1 @@
-# flutter_random_number
+First Flutter project, which is a simple die simulator.
